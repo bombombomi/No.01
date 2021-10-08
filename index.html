@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+		<meta charset="utf-8">
+
+		<title>NO.1</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+		<style type="text/css">
+			
+			body {font-family: 'Nanum Gothic Coding', monospace; background-color: rgb(245, 245, 245); margin: 0; position: relative;}
+
+			.wrap {width: 1080px; margin: auto; text-align: left;}
+
+			#one {font-size: 40px; color: rgb(128, 149, 174); border: 3px solid rgb(128, 149, 174); padding: 20px; margin-top: 20px; margin-bottom: 30pxpx;}
+			#two {font-size: 20px; color: rgb(128, 149, 174); display: inline; margin-left: 15px;}
+
+			#three {margin-top: 40px;}
+			h2 {font-size: 20px; color: rgb(128, 149, 174); margin-top: 40px; text-align: center; border: 3px solid rgb(128, 149, 174); padding: 4px; width: 100px; margin-bottom: 10px;}
+			p {font-size: 17px; color: rgb(128, 149, 174);}
+			#last {margin-bottom: 40px;}
+
+			.swiper-container {
+	        width: 1080px;
+	        height: 100%;
+	        }
+
+	        .swiper-slide {
+	        text-align: center;
+        	font-size: 18px;
+        	background: #fff;
+
+	        /* Center slide text vertically */
+	        display: -webkit-box;
+	        display: -ms-flexbox;
+	        display: -webkit-flex;
+	        display: flex;
+	        -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	        -webkit-justify-content: center;
+	        justify-content: center;
+	        -webkit-box-align: center;
+	        -ms-flex-align: center;
+	        -webkit-align-items: center;
+	        align-items: center;
+	        }
+
+	        .swiper-slide img {
+	        display: block;
+	        width: 1080px;
+	        height: 100%;
+	        object-fit: cover;
+	        }
+
+	        .swiper-button-next {color: #8095ae;}
+	        .swiper-button-prev {color: #8095ae;}
+
+		</style>
+	</head>
+	
+	<body>
+
+		<div class="wrap">
+			<h1 id="one">NO.1<p id="two"><strong>| 2021.10.06</strong></p></h1>
+
+			<h2>팀이름</h2>
+			<p><b>봄희 오는 동원에 (봄이 오는 동안에)</b></p>
+			<br>
+			<h2>팀장</h2>
+			<p><b>22157044 박세희</b></p>
+			<br>
+			<h2>자기소개</h2>
+			<p><strong>22157013 박세희_</strong><br><br>
+			<b>22살 박세희입니다. 코딩을 잘하려고 따로 노력하고 있습니다. 학교에서 상시 거주해서 궁금한거 있으면 서로 만나서 과제해요!</b></p>
+			<br>
+			<p><strong>22157039 고동우_</strong><br><br>
+			<b>26살 고동우입니다. 팀원들에게 절대 해를 안 끼치는게 특징입니다. 시키는거 다 할 자신이 있고 열심히 노력하겠습니다!</b></p>
+			<br>
+			<p><strong>22057050 임희원_</strong><br><br>
+			<b>22살 임희원입니다. 고양이 키우고 있는 집사입니다. 성격이 적극적이라 다가오시거나 부끄러우시면 제가 다가갑니다! 잘 부탁드려요!</b></p>
+			<br>
+			<p><strong>22157044 김봄_</strong><br><br>
+			<b>21살 김봄입니다. 코딩이 많이 어렵지만 열심히 찾아가면서 도움이 될 수 있도록 노력하겠습니다! 잘 부탁드려요!</b></p>
+
+			<h2>자료조사</h2>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+      		<div class="swiper-wrapper">
+        	<div class="swiper-slide"><img src="images/1.jpeg"></div>
+        	<div class="swiper-slide"><img src="images/2.jpeg"></div>
+      		</div>
+      		<div class="swiper-button-next"></div>
+      		<div class="swiper-button-prev"></div>
+    		</div>
+
+    		<!-- Swiper JS -->
+		    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		    <!-- Initialize Swiper -->
+		    <script>
+            var swiper = new Swiper(".mySwiper", {
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            });
+            </script>
+
+			
+			<h2>질문사항</h2>
+			<p id="last"><b>Q1. 라이프로그와 데이터 시각화 왜 둘이 같이 비교 대상이 되었는가?<br><br>
+			Q2. 시각화의 독창성이 평가 기준에 반영이 되는가?</b></p>
+
+
+		</div>
+
+	</body>
+</html>
